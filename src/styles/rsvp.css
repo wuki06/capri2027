@@ -1,0 +1,129 @@
+/* ════════════ RSVP ════════════ */
+.rsvp { padding-top: clamp(70px, 14vw, 110px); }
+.rsvp-card {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 48px clamp(20px, 6vw, 50px) 42px;
+  background: var(--ivory) var(--grain);
+  background-size: 256px;
+  box-shadow: 0 1px 2px rgba(80, 55, 20, .08), 0 34px 60px -34px rgba(80, 55, 20, .45);
+  text-align: left;
+}
+.rsvp-card::before {
+  content: ''; position: absolute; inset: 8px;
+  border: 1px solid rgba(179, 137, 74, .42);
+  pointer-events: none;
+}
+.rsvp-title { text-align: center; font-weight: 300; font-style: italic; font-size: clamp(36px, 10vw, 52px); line-height: 1.05; color: var(--ink); }
+.rsvp-by { text-align: center; margin-top: 12px; font-size: 11.5px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--gold-deep); line-height: 1.9; }
+.rsvp-by span { font-size: 19px; font-weight: 500; letter-spacing: .06em; text-transform: none; font-style: italic; color: var(--ink); }
+
+.rsvp-form { display: flex; flex-direction: column; gap: 26px; }
+.field-pair { display: grid; gap: 22px; }
+@media (min-width: 560px) { .field-pair { grid-template-columns: 1fr 1fr; } }
+
+.field { display: flex; flex-direction: column; }
+.field-label {
+  display: block;
+  font-size: 11.5px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--gold-deep);
+  line-height: 1.6;
+}
+.field-hint { letter-spacing: .08em; text-transform: none; font-style: italic; font-weight: 500; font-size: 14px; color: var(--ink-soft); }
+.input {
+  width: 100%;
+  min-height: 46px;
+  padding: 8px 2px 8px;
+  border: 0;
+  border-bottom: 1px solid rgba(58, 47, 34, .32);
+  border-radius: 0;
+  background: transparent;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color .4s ease, box-shadow .4s ease;
+}
+.input::placeholder { color: rgba(106, 90, 70, .55); font-style: italic; }
+.input:focus { outline: none; border-bottom-color: var(--gold); box-shadow: 0 1px 0 0 var(--gold); }
+.textarea { resize: vertical; min-height: 64px; line-height: 1.45; }
+.has-error .input { border-bottom-color: var(--error); }
+.field-error { margin-top: 6px; font-style: italic; font-size: 16px; color: var(--error); line-height: 1.3; animation: fadeUp .4s var(--ease-out); }
+
+.choice { border: 0; padding: 0; margin: 0; min-width: 0; }
+.choice legend { padding: 0; margin-bottom: 10px; }
+.choice-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.choice-opt {
+  position: relative;
+  display: inline-flex; align-items: center; gap: 10px;
+  min-height: 46px;
+  padding: 8px 16px 8px 12px;
+  border: 1px solid rgba(179, 137, 74, .38);
+  font-size: 18px;
+  color: var(--ink);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.choice-opt input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.choice-opt:has(input:focus-visible) { outline: 1.5px solid var(--gold); outline-offset: 3px; }
+.choice-ring { width: 16px; height: 16px; border-radius: 50%; border: 1px solid var(--gold); display: grid; place-items: center; flex: none; }
+.choice-ring::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); transform: scale(0); transition: transform .35s var(--ease-out); }
+.choice-opt.is-on { border-color: var(--gold); background: rgba(179, 137, 74, .08); }
+.choice-opt.is-on .choice-ring::after { transform: scale(1); }
+.choice.has-error .choice-opt { border-color: rgba(154, 59, 43, .45); }
+
+.rsvp-more { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .8s var(--ease), opacity .6s ease; opacity: 0; }
+.rsvp-more.is-open { grid-template-rows: 1fr; opacity: 1; }
+.rsvp-more-inner { overflow: hidden; display: flex; flex-direction: column; gap: 26px; min-height: 0; }
+.rsvp-more.is-open .rsvp-more-inner { padding-top: 2px; }
+
+.stepper { display: inline-flex; align-items: center; margin-top: 6px; border: 1px solid rgba(179, 137, 74, .38); width: max-content; }
+.step { width: 48px; height: 46px; font-size: 22px; color: var(--gold-deep); display: grid; place-items: center; }
+.step:disabled { opacity: .3; cursor: default; }
+.step-val { min-width: 48px; text-align: center; font-size: 22px; border-left: 1px solid rgba(179, 137, 74, .25); border-right: 1px solid rgba(179, 137, 74, .25); line-height: 46px; font-variant-numeric: lining-nums; }
+.guest-names { display: flex; flex-direction: column; gap: 14px; }
+.guest-names .field-label:first-child { margin-bottom: -6px; }
+
+.btn-seal {
+  position: relative;
+  width: 100%;
+  min-height: 58px;
+  margin-top: 8px;
+  display: grid; place-items: center;
+  background: #3A2F22;
+  color: #F6EEDC;
+  font-weight: 600; font-size: 13px; letter-spacing: .34em; text-transform: uppercase;
+  overflow: hidden;
+  box-shadow: 0 16px 30px -18px rgba(58, 47, 34, .7);
+}
+.btn-seal::before { content: ''; position: absolute; inset: 4px; border: 1px solid rgba(220, 192, 138, .45); pointer-events: none; }
+.btn-seal:disabled { cursor: progress; }
+.btn-seal-text { position: relative; margin-right: -.34em; }
+.btn-seal-ink { position: absolute; left: 12px; right: 12px; bottom: 10px; height: 1px; background: var(--gold-light); transform: scaleX(0); transform-origin: left; }
+.is-sending .btn-seal-ink { animation: ink 1.4s var(--ease) infinite; }
+@keyframes ink { 0% { transform: scaleX(0); transform-origin: left; } 50% { transform: scaleX(1); transform-origin: left; } 50.1% { transform-origin: right; } 100% { transform: scaleX(0); transform-origin: right; } }
+
+.rsvp-status:focus { outline: none; }
+.rsvp-note {
+  padding: 16px 0;
+  border-top: 1px solid rgba(179, 137, 74, .4);
+  border-bottom: 1px solid rgba(179, 137, 74, .4);
+  font-style: italic; font-size: 18px; color: var(--ink);
+  animation: fadeUp .6s var(--ease-out);
+}
+.rsvp-note--error { color: var(--error); }
+.rsvp-fallback { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; font-style: normal; }
+.rsvp-fallback .btn-line { flex: 1 1 auto; padding: 10px 14px; font-size: 11.5px; }
+
+.rsvp-thanks { text-align: center; padding: 10px 0 6px; font-style: italic; font-size: 20px; color: var(--ink-soft); }
+.thanks-seal { width: 110px; height: 110px; margin: 0 auto 18px; animation: stamp 1s var(--ease-out) both; }
+.thanks-big { font-family: var(--script); font-style: normal; font-size: 52px; color: var(--ink); line-height: 1.1; margin-bottom: 6px; }
+@keyframes stamp {
+  0% { opacity: 0; transform: scale(1.6) rotate(-14deg); }
+  60% { opacity: 1; transform: scale(.94) rotate(2deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}

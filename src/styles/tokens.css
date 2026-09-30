@@ -1,0 +1,39 @@
+:root {
+  /* Farben — Italian Summer Elegance */
+  --ivory: #F7F1E6;
+  --paper: #F2E9D8;
+  --paper-deep: #E8DBC3;
+  --champagne: #E6D3AE;
+  --sand: #D6BE98;
+  --gold: #B3894A;
+  --gold-deep: #85622C;
+  --gold-light: #DCC08A;
+  --olive: #6F7148;
+  --sage: #A3AD93;
+  --rose: #D8B4A6;
+  --med-blue: #3F6684;
+  --night: #1C2436;
+  --night-2: #252E44;
+  --ink: #3A2F22;
+  --ink-soft: #6A5A46;
+  --error: #9A3B2B;
+
+  /* Typografie */
+  --serif: 'Cormorant Garamond', 'Cormorant', 'EB Garamond', Garamond, 'Times New Roman', serif;
+  --script: 'Pinyon Script', 'Great Vibes', 'Snell Roundhand', 'Apple Chancery', cursive;
+
+  /* Papier */
+  --grain: url('/assets/textures/paper-grain.webp');
+  --linen: url('/assets/textures/linen.webp');
+  --deckle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 16' preserveAspectRatio='none'%3E%3Cpath d='M0 16 L0.0 9.7 L4.0 9.3 L8.0 10.6 L13.8 7.1 L17.2 9.4 L20.3 10.6 L26.3 10.0 L29.9 9.1 L36.1 12.9 L41.2 9.4 L44.0 10.9 L50.7 10.3 L54.2 10.5 L60.6 10.2 L64.7 9.0 L67.5 7.5 L69.7 6.2 L73.1 8.7 L76.8 11.0 L80.9 7.0 L84.3 7.8 L87.9 8.8 L90.4 6.3 L96.2 9.1 L99.9 6.9 L102.1 9.5 L108.9 9.7 L111.0 7.4 L116.8 8.1 L121.9 10.1 L124.9 10.7 L128.8 10.8 L130.8 6.2 L136.8 7.8 L139.2 10.9 L142.3 8.8 L145.1 11.9 L147.3 8.5 L154.3 6.6 L160.2 8.0 L164.6 7.2 L166.8 8.1 L173.2 10.2 L175.4 7.3 L178.4 7.2 L181.1 6.3 L185.9 11.0 L192.4 9.3 L198.2 11.0 L201.2 10.4 L207.9 7.7 L213.8 9.2 L218.5 9.3 L221.8 10.6 L224.2 10.9 L229.5 6.2 L232.2 10.8 L234.5 6.8 L239.3 9.7 L242.4 6.0 L244.5 12.9 L250.5 9.9 L255.3 10.4 L260.6 7.7 L266.5 8.4 L268.6 6.2 L273.1 10.3 L275.8 7.8 L280.4 6.1 L286.5 6.4 L290.4 9.9 L293.6 8.4 L296.1 6.6 L302.5 8.6 L308.8 12.4 L315.2 7.0 L321.4 8.1 L324.2 10.4 L327.0 8.5 L331.7 10.5 L333.7 7.6 L338.1 9.6 L340.5 7.2 L344.3 9.8 L349.4 9.4 L353.0 10.6 L359.6 7.5 L365.5 9.1 L368.2 9.9 L373.5 9.2 L376.2 10.0 L382.7 7.9 L386.5 11.6 L390.5 10.7 L395.8 7.6 L397.9 6.1 L400 16 Z' fill='black'/%3E%3C/svg%3E");
+
+  /* Bewegung */
+  --ease: cubic-bezier(0.65, 0, 0.25, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Safe Areas */
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
