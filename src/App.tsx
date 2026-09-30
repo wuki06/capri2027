@@ -6,6 +6,9 @@ import { Loader } from './components/Loader';
 import { Envelope } from './components/Envelope';
 import { MusicControl, MusicPrompt } from './components/Music';
 import { ProgressThread } from './components/Chrome';
+import { LangSwitch } from './components/LangSwitch';
+import { useLang } from './lib/i18n';
+import { W } from './lib/format';
 import { Hero } from './sections/Hero';
 import { SaveTheDate } from './sections/SaveTheDate';
 import { Benvenuti } from './sections/Benvenuti';
@@ -24,6 +27,7 @@ import { wait } from './lib/motion';
 type Phase = 'loading' | 'envelope' | 'world';
 
 export default function App() {
+  const { t } = useLang();
   const [phase, setPhase] = useState<Phase>('loading');
   const [loaderLeaving, setLoaderLeaving] = useState(false);
   const [envKey, setEnvKey] = useState(0);
@@ -103,7 +107,7 @@ export default function App() {
   const inWorld = phase === 'world';
   return (
     <>
-      <a className="skip-link" href="#rsvp">Skip to RSVP</a>
+      <a className="skip-link" href="#rsvp">{t(W.text.skip)}</a>
 
       <main className={`world${inWorld ? ' is-live' : ''}`} inert={!inWorld} aria-hidden={!inWorld}>
         <Hero arrived={arrived} />
@@ -123,6 +127,7 @@ export default function App() {
       <ProgressThread visible={inWorld} />
       <MusicControl visible={controls && inWorld} />
       <MusicPrompt show={prompt} onDone={closePrompt} />
+      <LangSwitch visible={phase === 'world' || loaderLeaving} />
 
       {envMounted && (
         <Envelope key={envKey} ready={loaderLeaving || phase !== 'loading'} onOpened={onOpened} />

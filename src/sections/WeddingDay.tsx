@@ -2,10 +2,12 @@
 import { useEffect, useRef } from 'react';
 import { TimeIcon } from '../art/Icons';
 import { W } from '../lib/format';
+import { useLang } from '../lib/i18n';
 import { clamp } from '../lib/motion';
 import { useScrollScene } from '../lib/scroll';
 
 export function WeddingDay() {
+  const { t } = useLang();
   const wrap = useRef<HTMLDivElement>(null);
   const list = useRef<HTMLOListElement>(null);
   const line = useRef<HTMLSpanElement>(null);
@@ -42,17 +44,17 @@ export function WeddingDay() {
   return (
     <section ref={ref} className="paper-scene day" aria-labelledby="day-title">
       <div className="deckle" aria-hidden="true" />
-      <h2 id="day-title" className="section-title" data-reveal>{W.text.weddingDay.title}</h2>
+      <h2 id="day-title" className="section-title" data-reveal>{t(W.text.weddingDay.title)}</h2>
       <div ref={wrap} className="tl-wrap">
       <span className="tl-track" aria-hidden="true"><span ref={line} className="tl-fill" /></span>
       <ol ref={list} className="tl">
-        {W.timeline.map((t) => (
-          <li key={t.id} className="tl-item">
+        {W.timeline.map((it) => (
+          <li key={it.id} className="tl-item">
             <span className="tl-dot" aria-hidden="true" />
-            <time className="tl-time">{t.time}</time>
+            <time className="tl-time">{it.time}</time>
             <div className="tl-body">
-              <h3 className="tl-title"><TimeIcon name={t.icon} className="tl-icon" />{t.title}</h3>
-              {t.text && <p className="tl-text">{t.text}</p>}
+              <h3 className="tl-title"><TimeIcon name={it.icon} className="tl-icon" />{t(it.title)}</h3>
+              {t(it.text) && <p className="tl-text">{t(it.text)}</p>}
             </div>
           </li>
         ))}

@@ -11,6 +11,7 @@ import { paperSlide, sealCrack } from '../lib/audio';
 import { tick } from '../lib/haptics';
 import { W, dots, PLACE } from '../lib/format';
 import { EASE, EASE_OUT, animate, reducedMotion, wait } from '../lib/motion';
+import { useLang } from '../lib/i18n';
 
 interface Props {
   ready: boolean;
@@ -18,6 +19,7 @@ interface Props {
 }
 
 export function Envelope({ ready, onOpened }: Props) {
+  const { t } = useLang();
   const busy = useRef(false);
   const [state, setState] = useState<'idle' | 'opening' | 'done'>('idle');
   const root = useRef<HTMLDivElement>(null);
@@ -160,7 +162,7 @@ export function Envelope({ ready, onOpened }: Props) {
               <OliveBranch className="emboss emboss--l" seed={5} leaves={14} olives={2} mono="currentColor" />
               <OliveBranch className="emboss emboss--r" seed={9} leaves={14} olives={2} mono="currentColor" />
               <div className="env-print">
-                <p className="env-print-line">{W.text.envelope.line1}</p>
+                <p className="env-print-line">{t(W.text.envelope.line1)}</p>
                 <p className="env-print-date">{dots(W.date)}</p>
                 <p className="env-print-place">{PLACE}</p>
               </div>
@@ -182,7 +184,7 @@ export function Envelope({ ready, onOpened }: Props) {
             className="seal"
             role="button"
             tabIndex={state === 'idle' ? 0 : -1}
-            aria-label={`Open the invitation from ${W.couple.first} and ${W.couple.second}`}
+            aria-label={`${t(W.text.envelope.aria)} — ${W.couple.first} & ${W.couple.second}`}
             aria-disabled={state !== 'idle'}
             onKeyDown={onKey}
             onClick={(e) => { e.stopPropagation(); void open(); }}
@@ -194,7 +196,7 @@ export function Envelope({ ready, onOpened }: Props) {
 
       <div ref={caption} className="env-caption" aria-hidden={state !== 'idle'}>
         <span className="env-caption-line" aria-hidden="true" />
-        <p>{W.text.envelope.cta}</p>
+        <p>{t(W.text.envelope.cta)}</p>
       </div>
     </div>
   );

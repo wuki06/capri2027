@@ -1,6 +1,7 @@
 /* Benvenuti a Capri — gepinnte Szene mit räumlicher Tiefe */
 import { CapriScene } from '../art/CapriScene';
 import { W } from '../lib/format';
+import { useLang } from '../lib/i18n';
 import { asset } from '../lib/assets';
 import { range, smooth } from '../lib/motion';
 import { setVars, useScrollScene } from '../lib/scroll';
@@ -25,7 +26,8 @@ export function Benvenuti() {
       '--out': range(p, 0.86, 1),
     });
   });
-  const [l1, l2, l3] = W.text.benvenuti.lines;
+  const { t } = useLang();
+  const [l1, l2, l3] = t(W.text.benvenuti.lines);
   const photo = asset(W.images.benvenuti);
   return (
     <section ref={ref} className={`pin pin--benvenuti${photo ? ' with-photo' : ''}`} aria-labelledby="benvenuti-title">

@@ -2,6 +2,7 @@
 import { WhiteFlowers } from '../art/Botanicals';
 import { W } from '../lib/format';
 import { asset } from '../lib/assets';
+import { useLang } from '../lib/i18n';
 import { setVars, useScrollScene } from '../lib/scroll';
 
 function ArchIllustration() {
@@ -37,7 +38,13 @@ function ArchIllustration() {
 
 export function Venue() {
   const v = W.venue;
-  const t = W.text.venue;
+  const { t: tr } = useLang();
+  const T = W.text.venue;
+  const t = {
+    kicker: tr(T.kicker), placeholderTitle: tr(T.placeholderTitle), placeholderText: tr(T.placeholderText),
+    mapsButton: tr(T.mapsButton), soon: tr(T.soon), alt: tr(T.alt),
+  };
+  const description = tr(v.description);
   const real = Boolean(v.name.trim());
   const photo = asset(v.photo);
   const ref = useScrollScene<HTMLElement>((s) => {
@@ -50,7 +57,7 @@ export function Venue() {
       <figure className="arch" data-reveal>
         <div className="arch-frame">
           <div className="arch-inner">
-            {photo ? <img src={photo} alt={real ? `${v.name}, ${W.place.city}` : 'A dream location in Capri'} loading="lazy" decoding="async" /> : <ArchIllustration />}
+            {photo ? <img src={photo} alt={real ? `${v.name}, ${W.place.city}` : t.alt} loading="lazy" decoding="async" /> : <ArchIllustration />}
           </div>
         </div>
         <WhiteFlowers className="arch-flowers" seed={17} />
@@ -59,7 +66,7 @@ export function Venue() {
         <>
           <h2 id="venue-title" className="venue-title" data-reveal>{v.name}</h2>
           {v.address && <address className="venue-address" data-reveal>{v.address}</address>}
-          {v.description && <p className="venue-text" data-reveal>{v.description}</p>}
+          {description && <p className="venue-text" data-reveal>{description}</p>}
           {(v.mapsUrl || v.coordinates) && (
             <a
               className="btn-line press"

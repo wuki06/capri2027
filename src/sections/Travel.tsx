@@ -4,6 +4,7 @@ import { W } from '../lib/format';
 import { range } from '../lib/motion';
 import { useScrollScene } from '../lib/scroll';
 import { tick } from '../lib/haptics';
+import { useLang } from '../lib/i18n';
 
 function GulfMap() {
   return (
@@ -28,6 +29,7 @@ function GulfMap() {
 }
 
 export function Travel() {
+  const { t } = useLang();
   const map = useRef<HTMLDivElement>(null);
   const ref = useScrollScene<HTMLElement>((s) => {
     map.current?.style.setProperty('--route', range(s.view, 0.18, 0.48).toFixed(4));
@@ -35,19 +37,19 @@ export function Travel() {
   return (
     <section ref={ref} className="paper-scene travel" aria-labelledby="travel-title">
       <div className="deckle" aria-hidden="true" />
-      <h2 id="travel-title" className="section-title" data-reveal>{W.text.travel.title}</h2>
+      <h2 id="travel-title" className="section-title" data-reveal>{t(W.text.travel.title)}</h2>
       <div ref={map} className="gulf-wrap" data-reveal><GulfMap /></div>
       <ol className="journey">
-        {W.travel.map((t, i) => (
-          <li key={t.id} className="journey-item" data-reveal>
+        {W.travel.map((it, i) => (
+          <li key={it.id} className="journey-item" data-reveal>
             <details onToggle={(e) => { if ((e.currentTarget as HTMLDetailsElement).open) tick(5); }}>
               <summary className="press">
                 <span className="journey-n" aria-hidden="true">{i + 1}</span>
-                <span className="journey-title">{t.title}</span>
+                <span className="journey-title">{t(it.title)}</span>
                 <span className="journey-plus" aria-hidden="true" />
               </summary>
               <div className="journey-body">
-                {t.details.length ? t.details.map((d, j) => <p key={j}>{d}</p>) : <p className="journey-soon">{W.text.travel.soon}</p>}
+                {t(it.details).length ? t(it.details).map((d, j) => <p key={j}>{d}</p>) : <p className="journey-soon">{t(W.text.travel.soon)}</p>}
               </div>
             </details>
           </li>

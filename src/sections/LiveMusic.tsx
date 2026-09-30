@@ -2,6 +2,7 @@
 import { CapriScene } from '../art/CapriScene';
 import { W } from '../lib/format';
 import { asset } from '../lib/assets';
+import { useLang } from '../lib/i18n';
 import { range, smooth } from '../lib/motion';
 import { setVars, useScrollScene } from '../lib/scroll';
 
@@ -53,16 +54,17 @@ export function LiveMusic() {
       '--foot': range(p, 0.9, 0.97),
     });
   });
+  const { t } = useLang();
   const b = W.band;
   const bandPhoto = asset(b.photo);
-  const [l1, l2, l3] = W.text.music.lines;
+  const [l1, l2, l3] = t(W.text.music.lines);
   return (
     <>
       <section ref={ref} className="pin pin--music" aria-labelledby="band-title">
         <div className="pin-stage">
           <CapriScene variant="music" festoon candles photo={asset(W.images.sunset)} photoNight={asset(W.images.night)} />
           <div className="music-copy">
-            <p className="kicker kicker--light" style={{ opacity: 'var(--k)' }}>{W.text.music.kicker}</p>
+            <p className="kicker kicker--light" style={{ opacity: 'var(--k)' }}>{t(W.text.music.kicker)}</p>
             <h2 id="band-title" className="band-name">
               {b.name.split('').map((ch, i) => (
                 <span key={i} style={{ opacity: `calc(var(--name) * ${b.name.length} - ${i})` }}>{ch}</span>
@@ -74,13 +76,13 @@ export function LiveMusic() {
               <span style={{ opacity: 'var(--l3)' }}>{l3}</span>
             </p>
             <p className="kicker kicker--light kicker--small band-foot" style={{ opacity: 'var(--foot)' }}>
-              {W.text.music.footer[0]}<br />{W.text.music.footer[1]}
+              {t(W.text.music.footer)[0]}<br />{t(W.text.music.footer)[1]}
             </p>
           </div>
         </div>
       </section>
 
-      <section className="night-band" aria-label={`${b.name} — live band`}>
+      <section className="night-band" aria-label={`${b.name} — ${t(W.text.music.band)}`}>
         <p className="band-langs" data-reveal>
           {b.languages.map((l, i) => (
             <span key={l}>{i > 0 && <i aria-hidden="true">·</i>}{l}</span>
@@ -88,7 +90,7 @@ export function LiveMusic() {
         </p>
         <figure className="band-portrait" data-reveal>
           {bandPhoto ? (
-            <img src={bandPhoto} alt={`${b.name}, live band`} loading="lazy" decoding="async" />
+            <img src={bandPhoto} alt={`${b.name} — ${t(W.text.music.band)}`} loading="lazy" decoding="async" />
           ) : (
             <Instruments />
           )}

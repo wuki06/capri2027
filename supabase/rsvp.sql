@@ -12,6 +12,7 @@ create table if not exists public.rsvps (
   farewell_brunch boolean,
   song_request    text,
   message         text,
+  language        text,
   submitted_at    timestamptz not null default now()
 );
 

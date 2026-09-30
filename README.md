@@ -25,6 +25,12 @@ Direktlink (BENUTZERNAME / REPO ersetzen):
 Endung egal (.jpg .png .webp). Vercel baut nach jedem Commit automatisch neu (ca. 1 Minute).
 Fehlt ein Bild, wird die gezeichnete Illustration gezeigt. Prompts: **BILDER-PROMPTS.md**.
 
+## Sprachen (Deutsch · Türkisch)
+- Gäste wechseln oben links mit **DE · TR**.
+- Link für die türkische Familie: `https://DEINE-ADRESSE/?lang=tr` (öffnet direkt auf Türkisch).
+- Link auf Deutsch: `https://DEINE-ADRESSE/?lang=de`.
+- Texte stehen in `src/data/wedding.ts` jeweils als `de: '…'` und `tr: '…'`.
+
 ## 3 · Inhalte ändern
 Alles in **`src/data/wedding.ts`**: Zeiten, Location (`venue.name` ausfüllen = echte Location
 erscheint), Band-Links, Farben, Weekend-Events (`enabled: false` blendet aus), Anreise-Texte,

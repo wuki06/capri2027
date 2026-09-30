@@ -3,11 +3,13 @@ import { CapriScene } from '../art/CapriScene';
 import { Monogram } from '../art/Seal';
 import { W, dots } from '../lib/format';
 import { asset } from '../lib/assets';
+import { useLang } from '../lib/i18n';
 import { tick } from '../lib/haptics';
 import { range, smooth } from '../lib/motion';
 import { setVars, useScrollScene } from '../lib/scroll';
 
 export function Finale({ onReplay }: { onReplay: () => void }) {
+  const { t } = useLang();
   const ref = useScrollScene<HTMLElement>((s) => {
     const p = s.pin;
     const el = ref.current;
@@ -33,7 +35,7 @@ export function Finale({ onReplay }: { onReplay: () => void }) {
       '--end3': range(p, 0.78, 0.88),
     });
   });
-  const [a, b, c] = W.text.finale.lines;
+  const [a, b, c] = t(W.text.finale.lines);
   return (
     <section ref={ref} className="pin pin--finale" aria-labelledby="finale-title">
       <div className="pin-stage">
@@ -45,16 +47,16 @@ export function Finale({ onReplay }: { onReplay: () => void }) {
         </div>
         <div className="finale-end">
           <p className="sr-only">{a} {b} {c}</p>
-          <h2 id="finale-title" className="kicker kicker--light finale-see" style={{ opacity: 'var(--end)' }}>{W.text.finale.see}</h2>
+          <h2 id="finale-title" className="kicker kicker--light finale-see" style={{ opacity: 'var(--end)' }}>{t(W.text.finale.see)}</h2>
           <p className="finale-date" style={{ opacity: 'var(--end)' }}>{dots(W.date)}</p>
           <p className="names finale-names" style={{ opacity: 'var(--end2)' }}>
             <span>{W.couple.first}</span><span className="amp">&amp;</span><span>{W.couple.second}</span>
           </p>
-          <p className="finale-forever" style={{ opacity: 'var(--end2)' }}>{W.text.finale.forever}</p>
+          <p className="finale-forever" style={{ opacity: 'var(--end2)' }}>{t(W.text.finale.forever)}</p>
           <div className="finale-mono" style={{ opacity: 'var(--end3)' }}><Monogram /></div>
           <button type="button" className="btn-line btn-line--light press finale-replay" style={{ opacity: 'var(--end3)' }}
             onClick={() => { tick(10); onReplay(); }}>
-            {W.text.finale.replay}
+            {t(W.text.finale.replay)}
           </button>
         </div>
       </div>
