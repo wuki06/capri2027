@@ -183,7 +183,7 @@ export const wedding = {
     table: 'rsvps',
     webhookUrl: '',
     // Ausweichweg, solange keine Datenbank verbunden ist:
-    whatsappNumber: '', // internationales Format ohne +, z. B. '352621000000'  ⟵ PLATZHALTER
+    whatsappNumber: '436801576484', // internationales Format ohne +, z. B. '352621000000'  ⟵ PLATZHALTER
     email: '', //                                                              ⟵ PLATZHALTER
   },
 
