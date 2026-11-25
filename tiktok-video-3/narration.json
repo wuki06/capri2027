@@ -1,0 +1,27 @@
+{
+  "voice": {"lengthScale": 0.97, "noiseScale": 0.6, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "say": "Was passiert, wenn du ein Loch quer durch die Erde bohrst, und hineinspringst?", "show": "Was passiert, wenn du ein Loch quer durch die Erde bohrst und hineinspringst?"},
+    {"id": "h2", "scene": "hook", "say": "Wie lange dauert der Fall bis zur anderen Seite? Merk dir deine Schätzung. Die Antwort kommt am Ende.", "show": "Wie lange dauert der Fall bis zur anderen Seite? Merk dir deine Schätzung. Die Antwort kommt am Ende."},
+
+    {"id": "d1", "scene": "drill", "say": "Wir starten in Deutschland. Der Tunnel führt genau durch den Erdmittelpunkt. Fast dreizehntausend Kilometer.", "show": "Wir starten in Deutschland. Der Tunnel führt genau durch den Erdmittelpunkt. Fast 13.000 Kilometer."},
+    {"id": "d2", "scene": "drill", "say": "Am anderen Ende: der Pazifik, südöstlich von Neuseeland.", "show": "Am anderen Ende: der Pazifik, südöstlich von Neuseeland."},
+    {"id": "d3", "scene": "drill", "say": "Keine Luft im Tunnel, und eine Kapsel, die jede Hitze aushält. Drei. Zwei. Eins. Spring!", "show": "Keine Luft im Tunnel und eine Kapsel, die jede Hitze aushält. 3. 2. 1. Spring!"},
+
+    {"id": "f1", "scene": "fall", "say": "Nach fünfunddreißig Kilometern verlässt du die Erdkruste. Schon dreitausend Kilometer pro Stunde schnell.", "show": "Nach 35 Kilometern verlässt du die Erdkruste. Schon 3000 km/h schnell."},
+    {"id": "f2", "scene": "fall", "say": "Jetzt der Erdmantel. Fast dreitausend Kilometer glühendes Gestein.", "show": "Jetzt der Erdmantel. Fast 3000 Kilometer glühendes Gestein."},
+    {"id": "f3", "scene": "fall", "say": "Dann der Erdkern. Flüssiges Eisen. Im Zentrum über fünftausend Grad, so heiß wie die Oberfläche der Sonne.", "show": "Dann der Erdkern. Flüssiges Eisen. Im Zentrum über 5000 Grad, so heiß wie die Oberfläche der Sonne."},
+    {"id": "f4", "scene": "fall", "say": "Am Mittelpunkt bist du über fünfunddreißigtausend Kilometer pro Stunde schnell. Und völlig schwerelos.", "show": "Am Mittelpunkt bist du über 35.000 km/h schnell. Und völlig schwerelos."},
+
+    {"id": "s1", "scene": "suspense", "say": "Ab jetzt bremst dich die Schwerkraft wieder ab.", "show": "Ab jetzt bremst dich die Schwerkraft wieder ab."},
+    {"id": "s2", "scene": "suspense", "say": "Ein Flugzeug braucht für diese Strecke fast einen ganzen Tag. Und du? Was schätzt du?", "show": "Ein Flugzeug braucht für diese Strecke fast einen ganzen Tag. Und du? Was schätzt du?"},
+
+    {"id": "r1", "scene": "reveal", "say": "Nur achtunddreißig Minuten!", "show": "Nur 38 Minuten!"},
+    {"id": "r2", "scene": "reveal", "say": "Viele Schulbücher sagen zweiundvierzig. Aber weil der Erdkern so schwer ist, bist du sogar noch schneller.", "show": "Viele Schulbücher sagen 42. Aber weil der Erdkern so schwer ist, bist du sogar noch schneller."},
+    {"id": "r3", "scene": "reveal", "say": "Und du kommst genau mit null Tempo an der Oberfläche an.", "show": "Und du kommst genau mit null Tempo an der Oberfläche an."},
+
+    {"id": "t1", "scene": "twist", "say": "Doch wenn dich niemand festhält, fällst du zurück. Und wieder. Und wieder. Für immer hin und her.", "show": "Doch wenn dich niemand festhält, fällst du zurück. Und wieder. Und wieder. Für immer hin und her."},
+
+    {"id": "c1", "scene": "outro", "say": "Wie lange hättest du geschätzt? Schreib es in die Kommentare!", "show": "Wie lange hättest du geschätzt? Schreib es in die Kommentare!"}
+  ]
+}
