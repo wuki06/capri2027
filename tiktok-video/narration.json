@@ -1,0 +1,27 @@
+{
+  "voice": {"lengthScale": 1.0, "noiseScale": 0.6, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "say": "Diese tausend Pendel starten fast exakt gleich.", "show": "Diese 1000 Pendel starten fast exakt gleich."},
+    {"id": "h2", "scene": "hook", "say": "Der Unterschied zwischen ihnen: ein Milliardstel Grad.", "show": "Der Unterschied zwischen ihnen: ein Milliardstel Grad."},
+    {"id": "h3", "scene": "hook", "say": "Bleib dran. Was gleich passiert, ist pures Chaos.", "show": "Bleib dran. Was gleich passiert, ist pures Chaos."},
+
+    {"id": "s1", "scene": "single", "say": "Das ist ein Doppelpendel. Zwei Stäbe, zwei Gelenke, nur die Schwerkraft.", "show": "Das ist ein Doppelpendel. Zwei Stäbe, zwei Gelenke, nur die Schwerkraft."},
+    {"id": "s2", "scene": "single", "say": "Kein Zufall, kein Motor. Jede Bewegung folgt exakt den Gesetzen von Newton.", "show": "Kein Zufall, kein Motor. Jede Bewegung folgt exakt den Gesetzen von Newton."},
+    {"id": "s3", "scene": "single", "say": "Und trotzdem kann niemand vorhersagen, wo es in einer Minute sein wird.", "show": "Und trotzdem kann niemand vorhersagen, wo es in einer Minute sein wird."},
+
+    {"id": "t1", "scene": "twins", "say": "Hier sind zwei Pendel. Ihr Startwinkel unterscheidet sich um ein Millionstel Grad.", "show": "Hier sind zwei Pendel. Ihr Startwinkel unterscheidet sich um ein Millionstel Grad."},
+    {"id": "t2", "scene": "twins", "say": "Am Anfang bewegen sie sich wie Zwillinge.", "show": "Am Anfang bewegen sie sich wie Zwillinge."},
+    {"id": "t3", "scene": "twins", "say": "Doch der winzige Fehler wächst exponentiell. Er verdoppelt sich immer wieder.", "show": "Doch der winzige Fehler wächst exponentiell. Er verdoppelt sich immer wieder."},
+    {"id": "t4", "scene": "twins", "say": "Und plötzlich gehen sie völlig getrennte Wege.", "show": "Und plötzlich gehen sie völlig getrennte Wege."},
+
+    {"id": "r1", "scene": "reveal", "say": "Und jetzt zurück zu unseren tausend Pendeln.", "show": "Und jetzt zurück zu unseren 1000 Pendeln."},
+    {"id": "r2", "scene": "reveal", "say": "Ein Milliardstel Grad. Schau genau hin.", "show": "Ein Milliardstel Grad. Schau genau hin."},
+    {"id": "r3", "scene": "reveal", "say": "Aus perfekter Ordnung wird in Sekunden ein Feuerwerk aus Chaos.", "show": "Aus perfekter Ordnung wird in Sekunden ein Feuerwerk aus Chaos."},
+
+    {"id": "m1", "scene": "meaning", "say": "Physiker nennen das den Schmetterlingseffekt.", "show": "Physiker nennen das den Schmetterlingseffekt."},
+    {"id": "m2", "scene": "meaning", "say": "Genau deshalb kann kein Wetterbericht der Welt mehr als etwa zwei Wochen in die Zukunft blicken.", "show": "Genau deshalb kann kein Wetterbericht der Welt mehr als etwa zwei Wochen in die Zukunft blicken."},
+    {"id": "m3", "scene": "meaning", "say": "Das Universum folgt festen Regeln. Und ist trotzdem unvorhersehbar.", "show": "Das Universum folgt festen Regeln. Und ist trotzdem unvorhersehbar."},
+
+    {"id": "c1", "scene": "outro", "say": "Hättest du gedacht, dass ein so einfaches Pendel so chaotisch ist? Schreib es in die Kommentare!", "show": "Hättest du gedacht, dass ein so einfaches Pendel so chaotisch ist? Schreib es in die Kommentare!"}
+  ]
+}
