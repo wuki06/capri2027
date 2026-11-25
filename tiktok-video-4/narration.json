@@ -1,0 +1,30 @@
+{
+  "voice": {"lengthScale": 0.97, "noiseScale": 0.6, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "say": "Dieser Dominostein ist nur fünf Millimeter klein.", "show": "Dieser Dominostein ist nur 5 Millimeter klein."},
+    {"id": "h2", "scene": "hook", "say": "Kann er einen Stein umwerfen, der so hoch ist wie ein Wolkenkratzer?", "show": "Kann er einen Stein umwerfen, der so hoch ist wie ein Wolkenkratzer?"},
+    {"id": "h3", "scene": "hook", "say": "Die Antwort ist unglaublich. Bleib bis zum Ende dran.", "show": "Die Antwort ist unglaublich. Bleib bis zum Ende dran."},
+
+    {"id": "u1", "scene": "rule", "say": "Ein Physiker hat bewiesen: Ein Dominostein kann einen umwerfen, der eineinhalb mal so groß ist.", "show": "Ein Physiker hat bewiesen: Ein Dominostein kann einen umwerfen, der 1,5-mal so groß ist."},
+    {"id": "u2", "scene": "rule", "say": "Also bauen wir eine Kette. Jeder Stein ist eineinhalb mal größer als der davor.", "show": "Also bauen wir eine Kette. Jeder Stein ist 1,5-mal größer als der davor."},
+
+    {"id": "q1", "scene": "riddle", "say": "Das Ziel: ein Stein, über vierhundert Meter hoch.", "show": "Das Ziel: ein Stein, über 400 Meter hoch."},
+    {"id": "q2", "scene": "riddle", "say": "Wie viele Steine brauchst du dafür? Hundert? Tausend? Eine Million? Merk dir deinen Tipp. Los geht's!", "show": "Wie viele Steine brauchst du dafür? Hundert? Tausend? Eine Million? Merk dir deinen Tipp. Los geht's!"},
+
+    {"id": "c1", "scene": "chain", "say": "Noch winzig. So klein wie eine Münze.", "show": "Noch winzig. So klein wie eine Münze."},
+    {"id": "c2", "scene": "chain", "say": "Jetzt schon so groß wie ein Mensch.", "show": "Jetzt schon so groß wie ein Mensch."},
+    {"id": "c3", "scene": "chain", "say": "So hoch wie ein Haus.", "show": "So hoch wie ein Haus."},
+    {"id": "c4", "scene": "chain", "say": "Höher als ein Kirchturm.", "show": "Höher als ein Kirchturm."},
+
+    {"id": "s1", "scene": "freeze", "say": "Stopp! Wir sind fast am Ziel.", "show": "STOPP! Wir sind fast am Ziel."},
+    {"id": "s2", "scene": "freeze", "say": "Was glaubst du: Wie viele Steine sind schon umgefallen?", "show": "Was glaubst du: Wie viele Steine sind schon umgefallen?"},
+    {"id": "s3", "scene": "freeze", "say": "Und jetzt: der letzte Stein.", "show": "Und jetzt: der letzte Stein."},
+
+    {"id": "r1", "scene": "reveal", "say": "Es waren nur neunundzwanzig Steine!", "show": "Es waren nur 29 Steine!"},
+    {"id": "r2", "scene": "reveal", "say": "Aus fünf Millimetern werden vierhundertsechsundzwanzig Meter. Das ist die Macht des exponentiellen Wachstums.", "show": "Aus 5 Millimetern werden 426 Meter. Das ist die Macht des exponentiellen Wachstums."},
+
+    {"id": "t1", "scene": "twist", "say": "Und noch verrückter: Mit nur dreiundsechzig Steinen würde der letzte bis zum Mond reichen.", "show": "Und noch verrückter: Mit nur 63 Steinen würde der letzte bis zum Mond reichen."},
+
+    {"id": "o1", "scene": "outro", "say": "Wie viele hattest du getippt? Schreib es in die Kommentare!", "show": "Wie viele hattest du getippt? Schreib es in die Kommentare!"}
+  ]
+}
