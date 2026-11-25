@@ -1,0 +1,153 @@
+{
+ "voice": {
+  "lengthScale": 0.95,
+  "noiseScale": 0.6,
+  "noiseW": 0.8
+ },
+ "lines": [
+  {
+   "id": "h1",
+   "scene": "hook",
+   "say": "Vier Kugeln. Vier Bahnen. Gleiche Höhe, gleiches Ziel.",
+   "show": "Vier Kugeln. Vier Bahnen. Gleiche Höhe, gleiches Ziel."
+  },
+  {
+   "id": "h2",
+   "scene": "hook",
+   "say": "Welche Kugel ist zuerst unten?",
+   "show": "Welche Kugel ist zuerst unten?"
+  },
+  {
+   "id": "h3",
+   "scene": "hook",
+   "say": "Fast jeder tippt falsch. Die Auflösung kommt erst am Ende.",
+   "show": "Fast jeder tippt falsch. Die Auflösung kommt erst am Ende."
+  },
+  {
+   "id": "p1",
+   "scene": "tracks",
+   "say": "Bahn A ist eine gerade Linie, der kürzeste Weg.",
+   "show": "Bahn A ist eine gerade Linie, der kürzeste Weg."
+  },
+  {
+   "id": "p2",
+   "scene": "tracks",
+   "say": "Bahn B ist ein Kreisbogen.",
+   "show": "Bahn B ist ein Kreisbogen."
+  },
+  {
+   "id": "p3",
+   "scene": "tracks",
+   "say": "Bahn C ist eine seltsame Kurve. Am Anfang steil, dann flach.",
+   "show": "Bahn C ist eine seltsame Kurve. Am Anfang steil, dann flach."
+  },
+  {
+   "id": "p4",
+   "scene": "tracks",
+   "say": "Und Bahn D fällt senkrecht nach unten, dann geradeaus ins Ziel.",
+   "show": "Und Bahn D fällt senkrecht nach unten, dann geradeaus ins Ziel."
+  },
+  {
+   "id": "p5",
+   "scene": "tracks",
+   "say": "Keine Reibung, kein Antrieb. Nur die Schwerkraft.",
+   "show": "Keine Reibung, kein Antrieb. Nur die Schwerkraft."
+  },
+  {
+   "id": "r1",
+   "scene": "race",
+   "say": "Drei. Zwei. Eins. Los!",
+   "show": "3. 2. 1. Los!"
+  },
+  {
+   "id": "r2",
+   "scene": "race",
+   "say": "D fällt senkrecht, und wird sofort schnell!",
+   "show": "D fällt senkrecht und wird sofort schnell!"
+  },
+  {
+   "id": "r3",
+   "scene": "race",
+   "say": "Aber B und C liegen fast gleichauf.",
+   "show": "Aber B und C liegen fast gleichauf …"
+  },
+  {
+   "id": "r4",
+   "scene": "race",
+   "say": "Stopp!",
+   "show": "STOPP!"
+  },
+  {
+   "id": "w2",
+   "scene": "why",
+   "say": "Dieses Rätsel stellte Johann Bernoulli schon sechzehnhundertsechsundneunzig den klügsten Köpfen Europas.",
+   "show": "Dieses Rätsel stellte Johann Bernoulli schon 1696 den klügsten Köpfen Europas."
+  },
+  {
+   "id": "w3",
+   "scene": "why",
+   "say": "Isaac Newton soll es in einer einzigen Nacht gelöst haben.",
+   "show": "Isaac Newton soll es in einer einzigen Nacht gelöst haben."
+  },
+  {
+   "id": "w4",
+   "scene": "why",
+   "say": "Der Trick: Der kürzeste Weg ist nicht der schnellste.",
+   "show": "Der Trick: Der kürzeste Weg ist nicht der schnellste."
+  },
+  {
+   "id": "w5",
+   "scene": "why",
+   "say": "Wer am Anfang steil fällt, gewinnt Tempo. Aber jeder Umweg kostet Zeit.",
+   "show": "Wer am Anfang steil fällt, gewinnt Tempo. Aber jeder Umweg kostet Zeit."
+  },
+  {
+   "id": "w6",
+   "scene": "why",
+   "say": "Welche Bahn findet den perfekten Kompromiss? Hier ist die Auflösung.",
+   "show": "Welche Bahn findet den perfekten Kompromiss? Hier ist die Auflösung."
+  },
+  {
+   "id": "x1",
+   "scene": "result",
+   "say": "Bahn C gewinnt! Nur acht Tausendstel Sekunden vor B.",
+   "show": "Bahn C gewinnt! Nur 8 Tausendstel Sekunden vor B."
+  },
+  {
+   "id": "x2",
+   "scene": "result",
+   "say": "Diese Kurve heißt Zykloide. Sie ist die schnellste Bahn, die überhaupt möglich ist.",
+   "show": "Diese Kurve heißt Zykloide. Sie ist die schnellste Bahn, die überhaupt möglich ist."
+  },
+  {
+   "id": "x3",
+   "scene": "result",
+   "say": "Und die Gerade, der kürzeste Weg, wird sogar Letzter.",
+   "show": "Und die Gerade, der kürzeste Weg, wird sogar Letzter."
+  },
+  {
+   "id": "t1",
+   "scene": "twist",
+   "say": "Aber die Zykloide kann noch etwas Verrücktes.",
+   "show": "Aber die Zykloide kann noch etwas Verrücktes."
+  },
+  {
+   "id": "t2",
+   "scene": "twist",
+   "say": "Lass fünf Kugeln von verschiedenen Höhen gleichzeitig los.",
+   "show": "Lass fünf Kugeln von verschiedenen Höhen gleichzeitig los."
+  },
+  {
+   "id": "t3",
+   "scene": "twist",
+   "say": "Sie kommen alle exakt gleichzeitig unten an!",
+   "show": "Sie kommen alle exakt gleichzeitig unten an!"
+  },
+  {
+   "id": "c1",
+   "scene": "outro",
+   "say": "Hattest du richtig getippt? Schreib deinen Buchstaben in die Kommentare!",
+   "show": "Hattest du richtig getippt? Schreib deinen Buchstaben in die Kommentare!"
+  }
+ ]
+}

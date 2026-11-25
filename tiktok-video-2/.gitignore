@@ -1,0 +1,7 @@
+node_modules/
+build/
+out/
+public/sim/
+voices/*.onnx
+voices/*.json
+node_modules
