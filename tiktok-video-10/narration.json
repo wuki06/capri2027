@@ -1,0 +1,20 @@
+{
+  "voice": {"model": "de_DE-thorsten-high.onnx", "lengthScale": 0.95, "noiseScale": 0.667, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "say": "Wusstest du, dass du mit zehn Jahren Sparen mehr Geld haben kannst als jemand, der fünfunddreißig Jahre spart?", "show": "Wusstest du, dass du mit 10 Jahren Sparen mehr Geld haben kannst als jemand, der 35 Jahre spart?"},
+    {"id": "h2", "scene": "hook", "say": "Klingt unmöglich? Wir rechnen es durch. Rate mit, wer am Ende gewinnt!", "show": "Klingt unmöglich? Wir rechnen es durch. Rate mit, wer am Ende gewinnt!"},
+    {"id": "p1", "scene": "setup", "say": "Anna ist zwanzig. Sie legt zehn Jahre lang jeden Monat hundert Euro an. Dann hört sie auf. Für immer.", "show": "Anna ist 20. Sie legt 10 Jahre lang jeden Monat 100 Euro an. Dann hört sie auf. Für immer."},
+    {"id": "p2", "scene": "setup", "say": "Ben fängt erst mit dreißig an. Dafür zahlt er fünfunddreißig Jahre lang ein, bis zur Rente.", "show": "Ben fängt erst mit 30 an. Dafür zahlt er 35 Jahre lang ein, bis zur Rente."},
+    {"id": "p3", "scene": "setup", "say": "Silberne Münzen sind eingezahltes Geld. Goldene sind Zinsen. Wir rechnen mit sieben Prozent pro Jahr.", "show": "Silberne Münzen sind eingezahltes Geld. Goldene sind Zinsen. Wir rechnen mit 7 Prozent pro Jahr."},
+    {"id": "c1", "scene": "race", "say": "Los geht's!", "show": "Los geht's!"},
+    {"id": "c2", "scene": "race", "say": "Mit dreißig hat Anna schon über siebzehntausend Euro. Und hört auf.", "show": "Mit 30 hat Anna schon über 17.000 Euro. Und hört auf."},
+    {"id": "c3", "scene": "race", "say": "Ben zahlt und zahlt. Mit fünfundfünfzig holt er langsam auf.", "show": "Ben zahlt und zahlt. Mit 55 holt er langsam auf."},
+    {"id": "s1", "scene": "freeze", "say": "Stopp! Gleich ist Rente. Wer hat mehr? Anna oder Ben?", "show": "Stopp! Gleich ist Rente. Wer hat mehr? Anna oder Ben?"},
+    {"id": "r1", "scene": "reveal", "say": "Anna! Hundertdreiundachtzigtausend Euro. Mit nur zwölftausend Euro eingezahlt.", "show": "Anna! 183.000 Euro. Mit nur 12.000 Euro eingezahlt."},
+    {"id": "r2", "scene": "reveal", "say": "Ben hat hundertzweiundsiebzigtausend. Obwohl er dreieinhalbmal so viel eingezahlt hat.", "show": "Ben hat 172.000. Obwohl er dreieinhalbmal so viel eingezahlt hat."},
+    {"id": "e1", "scene": "explain", "say": "Der Trick heißt Zinseszins. Annas Geld hatte zehn Jahre mehr Zeit, Zinsen auf Zinsen zu sammeln.", "show": "Der Trick heißt Zinseszins. Annas Geld hatte 10 Jahre mehr Zeit, Zinsen auf Zinsen zu sammeln."},
+    {"id": "e2", "scene": "explain", "say": "Die wichtigste Zutat beim Sparen ist nicht das Geld. Sondern die Zeit.", "show": "Die wichtigste Zutat beim Sparen ist nicht das Geld. Sondern die Zeit."},
+    {"id": "b1", "scene": "bonus", "say": "Und Trading? Laut den Pflicht-Warnhinweisen der Broker verlieren meist über siebzig Prozent der Kleinanleger mit CFDs Geld.", "show": "Und Trading? Laut den Pflicht-Warnhinweisen der Broker verlieren meist über 70 Prozent der Kleinanleger mit CFDs Geld."},
+    {"id": "o1", "scene": "outro", "say": "Speicher dir das, und schick es jemandem, der jung ist! Keine Anlageberatung.", "show": "Speicher dir das und schick es jemandem, der jung ist! Keine Anlageberatung."}
+  ]
+}
