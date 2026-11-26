@@ -1,0 +1,26 @@
+{
+  "name": "iss-tiktok",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render src/index.ts ChaosPendel out/video_raw.mp4"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
+    "@remotion/cli": "^4.0.547",
+    "@remotion/three": "^4.0.547",
+    "postprocessing": "^6.39.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.547",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.3",
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}

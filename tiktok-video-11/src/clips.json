@@ -1,0 +1,146 @@
+[
+ {
+  "scene": "hook",
+  "src": "reel",
+  "ss": 632,
+  "start": 0,
+  "dur": 3.192,
+  "file": "clips/00.mp4"
+ },
+ {
+  "scene": "hook",
+  "src": "earth1",
+  "ss": 50,
+  "start": 3.192,
+  "dur": 3.192,
+  "file": "clips/01.mp4"
+ },
+ {
+  "scene": "hook",
+  "src": "zerog",
+  "ss": 47,
+  "start": 6.384,
+  "dur": 3.511,
+  "file": "clips/02.mp4"
+ },
+ {
+  "scene": "orbit",
+  "src": "reel",
+  "ss": 515,
+  "start": 9.396,
+  "dur": 4.044,
+  "file": "clips/03.mp4"
+ },
+ {
+  "scene": "orbit",
+  "src": "earth1",
+  "ss": 15,
+  "start": 13.44,
+  "dur": 4.044,
+  "file": "clips/04.mp4"
+ },
+ {
+  "scene": "quiz",
+  "src": "tour",
+  "ss": 180,
+  "start": 16.983,
+  "dur": 3.099,
+  "file": "clips/05.mp4"
+ },
+ {
+  "scene": "quiz",
+  "src": "tour",
+  "ss": 225,
+  "start": 20.082,
+  "dur": 3.099,
+  "file": "clips/06.mp4"
+ },
+ {
+  "scene": "quiz",
+  "src": "tour",
+  "ss": 720,
+  "start": 23.18,
+  "dur": 3.099,
+  "file": "clips/07.mp4"
+ },
+ {
+  "scene": "quiz",
+  "src": "tour",
+  "ss": 465,
+  "start": 26.279,
+  "dur": 2.789,
+  "file": "clips/08.mp4"
+ },
+ {
+  "scene": "reveal",
+  "src": "earth1",
+  "ss": 140,
+  "start": 28.568,
+  "dur": 2.706,
+  "file": "clips/09.mp4"
+ },
+ {
+  "scene": "reveal",
+  "src": "reel",
+  "ss": 662,
+  "start": 31.274,
+  "dur": 3.721,
+  "file": "clips/10.mp4"
+ },
+ {
+  "scene": "reveal",
+  "src": "tour",
+  "ss": 750,
+  "start": 34.995,
+  "dur": 3.721,
+  "file": "clips/11.mp4"
+ },
+ {
+  "scene": "explain",
+  "src": "earth1",
+  "ss": 105,
+  "start": 38.217,
+  "dur": 4.768,
+  "file": "clips/12.mp4"
+ },
+ {
+  "scene": "explain",
+  "src": "reel",
+  "ss": 600,
+  "start": 42.985,
+  "dur": 4.768,
+  "file": "clips/13.mp4"
+ },
+ {
+  "scene": "explain",
+  "src": "earth1",
+  "ss": 30,
+  "start": 47.753,
+  "dur": 4.768,
+  "file": "clips/14.mp4"
+ },
+ {
+  "scene": "bonus",
+  "src": "earth1",
+  "ss": 162,
+  "start": 52.021,
+  "dur": 7.781,
+  "file": "clips/15.mp4"
+ },
+ {
+  "scene": "outro",
+  "src": "tour",
+  "ss": 900,
+  "start": 59.302,
+  "dur": 4.238,
+  "file": "clips/16.mp4"
+ },
+ {
+  "scene": "outro",
+  "src": "reel",
+  "ss": 810,
+  "start": 63.54,
+  "dur": 3.468,
+  "file": "clips/17.mp4"
+ }
+]

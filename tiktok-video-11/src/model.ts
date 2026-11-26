@@ -1,0 +1,10 @@
+import raw from './timeline.json';
+import clipsRaw from './clips.json';
+export type Word = {w: string; s: number; e: number};
+export type Line = {id: string; scene: string; show: string; start: number; end: number; words: Word[]};
+export const TL = raw as unknown as {fps: number; durationInFrames: number; total: number; lines: Line[]; scenes: {id: string; start: number; end: number}[]};
+export const CLIPS = clipsRaw as {scene: string; src: string; ss: number; start: number; dur: number; file: string}[];
+export const FPS = TL.fps;
+export const line = (id: string) => TL.lines.find((l) => l.id === id)!;
+export const scene = (id: string) => TL.scenes.find((s) => s.id === id)!;
+export const wordAt = (id: string, m: string) => line(id).words.find((w) => w.w.toLowerCase().includes(m.toLowerCase()))!.s;

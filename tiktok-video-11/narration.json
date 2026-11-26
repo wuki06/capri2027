@@ -1,0 +1,16 @@
+{
+  "voice": {"model": "de_DE-thorsten-high.onnx", "lengthScale": 0.97, "noiseScale": 0.667, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "say": "Wusstest du, dass es auf der Raumstation fast genauso viel Schwerkraft gibt wie hier auf der Erde?", "show": "Wusstest du, dass es auf der Raumstation fast genauso viel Schwerkraft gibt wie hier auf der Erde?"},
+    {"id": "h2", "scene": "hook", "say": "Aber warum schweben die Astronauten dann? Die Antwort kennt fast niemand.", "show": "Aber warum schweben die Astronauten dann? Die Antwort kennt fast niemand."},
+    {"id": "p1", "scene": "orbit", "say": "Die ISS fliegt rund vierhundert Kilometer über uns. So weit wie von Berlin nach Frankfurt. Nur eben nach oben.", "show": "Die ISS fliegt rund 400 Kilometer über uns. So weit wie von Berlin nach Frankfurt. Nur eben nach oben."},
+    {"id": "p2", "scene": "quiz", "say": "Wie viel Schwerkraft gibt es dort oben noch? Rate mal! Null Prozent? Zehn? Fünfzig? Oder neunzig?", "show": "Wie viel Schwerkraft gibt es dort oben noch? Rate mal! 0 Prozent? 10? 50? Oder 90?"},
+    {"id": "s1", "scene": "quiz", "say": "Die meisten tippen auf null. Schließlich schweben hier alle.", "show": "Die meisten tippen auf null. Schließlich schweben hier alle."},
+    {"id": "r1", "scene": "reveal", "say": "Die Antwort: rund neunzig Prozent!", "show": "Die Antwort: rund 90 Prozent!"},
+    {"id": "r2", "scene": "reveal", "say": "Die Astronauten schweben nicht, weil die Schwerkraft fehlt. Sie schweben, weil sie ständig fallen.", "show": "Die Astronauten schweben nicht, weil die Schwerkraft fehlt. Sie schweben, weil sie ständig fallen."},
+    {"id": "e1", "scene": "explain", "say": "Die ISS rast mit rund achtundzwanzigtausend Kilometern pro Stunde. Sie fällt ständig Richtung Erde, ist aber so schnell, dass sie immer an ihr vorbeifällt.", "show": "Die ISS rast mit rund 28.000 km/h. Sie fällt ständig Richtung Erde, ist aber so schnell, dass sie immer an ihr vorbeifällt."},
+    {"id": "e2", "scene": "explain", "say": "Und weil alles an Bord genauso schnell mitfällt, fühlt es sich an wie Schwerelosigkeit.", "show": "Und weil alles an Bord genauso schnell mitfällt, fühlt es sich an wie Schwerelosigkeit."},
+    {"id": "b1", "scene": "bonus", "say": "Deshalb umrundet die ISS die Erde in nur rund neunzig Minuten. Die Crew sieht jeden Tag etwa sechzehn Sonnenaufgänge.", "show": "Deshalb umrundet die ISS die Erde in nur rund 90 Minuten. Die Crew sieht jeden Tag etwa 16 Sonnenaufgänge."},
+    {"id": "o1", "scene": "outro", "say": "Hättest du es gewusst? Schreib es in die Kommentare, und folg mir für mehr Weltraum-Wissen!", "show": "Hättest du es gewusst? Schreib es in die Kommentare und folg mir für mehr Weltraum-Wissen!"}
+  ]
+}
