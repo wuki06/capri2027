@@ -1,0 +1,20 @@
+{
+  "voice": {"model": "de-kerstin-low.onnx", "lengthScale": 1.0, "noiseScale": 0.6, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "depth": 15, "say": "Wir tauchen jetzt bis zum tiefsten Punkt der Erde. Elftausend Meter.", "show": "Wir tauchen jetzt bis zum tiefsten Punkt der Erde. 11.000 Meter."},
+    {"id": "h2", "scene": "hook", "depth": 120, "say": "Was dort unten liegt, hat Forscher geschockt. Bleib bis zum Ende.", "show": "Was dort unten liegt, hat Forscher geschockt. Bleib bis zum Ende."},
+    {"id": "d1", "scene": "dive", "depth": 332, "say": "Dreihundertzweiunddreißig Meter. Tiefer ist noch nie ein Mensch mit Tauchflasche getaucht.", "show": "332 Meter. Tiefer ist noch nie ein Mensch mit Tauchflasche getaucht."},
+    {"id": "d2", "scene": "dive", "depth": 1000, "say": "Ab tausend Metern: völlige Dunkelheit. Kein Sonnenlicht kommt hier mehr an.", "show": "Ab 1000 Metern: völlige Dunkelheit. Kein Sonnenlicht kommt hier mehr an."},
+    {"id": "d3", "scene": "dive", "depth": 1500, "say": "Ein Anglerfisch. Er lockt seine Beute mit einem leuchtenden Köder.", "show": "Ein Anglerfisch. Er lockt seine Beute mit einem leuchtenden Köder."},
+    {"id": "d4", "scene": "dive", "depth": 2200, "say": "Hier jagt der Pottwal Riesenkalmare. Mit nur einem einzigen Atemzug.", "show": "Hier jagt der Pottwal Riesenkalmare. Mit nur einem einzigen Atemzug."},
+    {"id": "d5", "scene": "dive", "depth": 3800, "say": "Dreitausendachthundert Meter: das Wrack der Titanic.", "show": "3800 Meter: das Wrack der Titanic."},
+    {"id": "d6", "scene": "dive", "depth": 6950, "say": "Ab sechstausend Metern beginnt die Hadal-Zone. Hier lebt der Dumbo-Oktopus.", "show": "Ab 6000 Metern beginnt die Hadal-Zone. Hier lebt der Dumbo-Oktopus."},
+    {"id": "d7", "scene": "dive", "depth": 8336, "say": "Achttausenddreihundertsechsunddreißig Meter: der tiefste Fisch, der je gefilmt wurde.", "show": "8336 Meter: der tiefste Fisch, der je gefilmt wurde."},
+    {"id": "d8", "scene": "dive", "depth": 9600, "say": "Der Druck ist hier über tausendmal so hoch wie an der Oberfläche. Wie ein Auto auf deiner Fingerspitze.", "show": "Der Druck ist hier über 1000-mal so hoch wie an der Oberfläche. Wie ein Auto auf deiner Fingerspitze."},
+    {"id": "d9", "scene": "dive", "depth": 10350, "say": "Selbst den Mount Everest könntest du hier versenken. Sein Gipfel wäre immer noch zwei Kilometer unter Wasser.", "show": "Selbst den Mount Everest könntest du hier versenken. Sein Gipfel wäre immer noch 2 Kilometer unter Wasser."},
+    {"id": "s1", "scene": "suspense", "depth": 10820, "say": "Gleich erreichen wir den Grund. Was glaubst du: Was liegt dort unten?", "show": "Gleich erreichen wir den Grund. Was glaubst du: Was liegt dort unten?"},
+    {"id": "r1", "scene": "reveal", "depth": 10898, "say": "Eine Plastiktüte. Gefilmt in zehntausendachthundertachtundneunzig Metern Tiefe.", "show": "Eine Plastiktüte. Gefilmt in 10.898 Metern Tiefe."},
+    {"id": "r2", "scene": "reveal", "depth": 10898, "say": "Selbst am tiefsten Punkt der Erde: Unser Müll ist schon da.", "show": "Selbst am tiefsten Punkt der Erde: Unser Müll ist schon da."},
+    {"id": "c1", "scene": "outro", "depth": 10898, "say": "Hättest du das erwartet? Schreib es in die Kommentare!", "show": "Hättest du das erwartet? Schreib es in die Kommentare!"}
+  ]
+}
