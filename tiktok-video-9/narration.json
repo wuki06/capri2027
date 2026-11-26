@@ -1,0 +1,18 @@
+{
+  "voice": {"model": "de_DE-thorsten-high.onnx", "lengthScale": 0.95, "noiseScale": 0.667, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "say": "Wusstest du, dass du ein warmes Getränk in nur zwei Minuten eiskalt bekommst?", "show": "Wusstest du, dass du ein warmes Getränk in nur 2 Minuten eiskalt bekommst?"},
+    {"id": "h2", "scene": "hook", "say": "Wir testen vier Methoden gegeneinander. Rate mit, welche gewinnt!", "show": "Wir testen vier Methoden gegeneinander. Rate mit, welche gewinnt!"},
+    {"id": "p1", "scene": "setup", "say": "Vier Dosen, alle fünfundzwanzig Grad warm. Unser Ziel: sechs Grad, richtig schön kalt.", "show": "Vier Dosen, alle 25 Grad warm. Unser Ziel: 6 Grad, richtig schön kalt."},
+    {"id": "p2", "scene": "setup", "say": "Dose eins kommt in den Kühlschrank. Dose zwei ins Gefrierfach.", "show": "Dose 1 kommt in den Kühlschrank. Dose 2 ins Gefrierfach."},
+    {"id": "p3", "scene": "setup", "say": "Dose drei in Eiswasser. Und Dose vier: Eiswasser mit viel Salz. Und wir drehen sie dabei.", "show": "Dose 3 in Eiswasser. Und Dose 4: Eiswasser mit viel Salz. Und wir drehen sie dabei."},
+    {"id": "c1", "scene": "race", "say": "Achtung, die Zeit läuft!", "show": "Achtung, die Zeit läuft!"},
+    {"id": "s1", "scene": "freeze", "say": "Stopp! Nach einer Minute ist Dose vier schon viel kälter als alle anderen. Aber wie lange brauchen die anderen? Rate mal!", "show": "Stopp! Nach einer Minute ist Dose 4 schon viel kälter als alle anderen. Aber wie lange brauchen die anderen? Rate mal!"},
+    {"id": "r1", "scene": "reveal", "say": "Eis, Salz und Drehen: nur zwei Minuten.", "show": "Eis, Salz und Drehen: nur 2 Minuten."},
+    {"id": "r2", "scene": "reveal", "say": "Eiswasser: elf Minuten. Gefrierfach: rund vierzig Minuten.", "show": "Eiswasser: 11 Minuten. Gefrierfach: rund 40 Minuten."},
+    {"id": "r3", "scene": "reveal", "say": "Und der Kühlschrank? Über vier Stunden!", "show": "Und der Kühlschrank? Über 4 Stunden!"},
+    {"id": "e1", "scene": "explain", "say": "Der Trick: Salz senkt den Schmelzpunkt von Eis. Das Eiswasser wird dadurch viel kälter als null Grad.", "show": "Der Trick: Salz senkt den Schmelzpunkt von Eis. Das Eiswasser wird dadurch viel kälter als 0 Grad."},
+    {"id": "e2", "scene": "explain", "say": "Wasser leitet Wärme über zwanzigmal besser als Luft. Und durch das Drehen fließt das Getränk innen ständig an der kalten Wand vorbei.", "show": "Wasser leitet Wärme über 20-mal besser als Luft. Und durch das Drehen fließt das Getränk innen ständig an der kalten Wand vorbei."},
+    {"id": "o1", "scene": "outro", "say": "Speicher dir das für den nächsten Sommer! Und schreib mir, welchen Trick ich als Nächstes testen soll.", "show": "Speicher dir das für den nächsten Sommer! Und schreib mir, welchen Trick ich als Nächstes testen soll."}
+  ]
+}
