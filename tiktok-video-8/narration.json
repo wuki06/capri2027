@@ -1,0 +1,105 @@
+{
+ "voice": {
+  "model": "de_DE-thorsten-high.onnx",
+  "lengthScale": 1.0,
+  "noiseScale": 0.667,
+  "noiseW": 0.8,
+  "fx": "aecho=0.8:0.55:40|75:0.10|0.06"
+ },
+ "lines": [
+  {
+   "id": "h1",
+   "scene": "hook",
+   "model": "de_DE-thorsten_emotional-medium.onnx",
+   "speaker": 7,
+   "say": "Im Oktober zweitausendeins verschwindet ein Bauer aus Bayern. Spurlos.",
+   "show": "Im Oktober 2001 verschwindet ein Bauer aus Bayern. Spurlos."
+  },
+  {
+   "id": "h2",
+   "scene": "hook",
+   "say": "Jahre später gesteht seine eigene Familie den Mord. Doch dann passiert etwas Unglaubliches.",
+   "show": "Jahre später gesteht seine eigene Familie den Mord. Doch dann passiert etwas Unglaubliches."
+  },
+  {
+   "id": "a1",
+   "scene": "night",
+   "say": "Rudi R. trinkt an diesem Abend in einer Gaststätte. Danach fährt er los, und kommt nie zu Hause an.",
+   "show": "Rudi R. trinkt an diesem Abend in einer Gaststätte. Danach fährt er los – und kommt nie zu Hause an."
+  },
+  {
+   "id": "a2",
+   "scene": "night",
+   "say": "Keine Leiche. Kein Auto. Keine Spur.",
+   "show": "Keine Leiche. Kein Auto. Keine Spur."
+  },
+  {
+   "id": "b1",
+   "scene": "interrogation",
+   "say": "Die Ermittler verdächtigen die Familie. Nach langen Verhören legen Familienmitglieder ein Geständnis ab.",
+   "show": "Die Ermittler verdächtigen die Familie. Nach langen Verhören legen Familienmitglieder ein Geständnis ab."
+  },
+  {
+   "id": "b2",
+   "scene": "interrogation",
+   "say": "Ihre Geschichte ist grausam: Sie hätten ihn erschlagen, zerstückelt, und an die Hofhunde verfüttert.",
+   "show": "Ihre Geschichte ist grausam: Sie hätten ihn erschlagen, zerstückelt und an die Hofhunde verfüttert."
+  },
+  {
+   "id": "b3",
+   "scene": "interrogation",
+   "say": "Vor Gericht widerrufen sie alles. Doch es ist zu spät.",
+   "show": "Vor Gericht widerrufen sie alles. Doch es ist zu spät."
+  },
+  {
+   "id": "b4",
+   "scene": "court",
+   "say": "Zweitausendfünf: Verurteilt wegen Totschlags. Jahrelange Haftstrafen. Beweise? Keine. Nur die Geständnisse.",
+   "show": "2005: Verurteilt wegen Totschlags. Jahrelange Haftstrafen. Beweise? Keine. Nur die Geständnisse."
+  },
+  {
+   "id": "s1",
+   "scene": "river",
+   "model": "de_DE-thorsten_emotional-medium.onnx",
+   "speaker": 7,
+   "say": "Vier Jahre vergehen. Dann, im März zweitausendneun, ziehen Arbeiter ein Auto aus der Donau.",
+   "show": "Vier Jahre vergehen. Dann, im März 2009, ziehen Arbeiter ein Auto aus der Donau."
+  },
+  {
+   "id": "s2",
+   "scene": "river",
+   "say": "Was glaubst du, wer darin sitzt?",
+   "show": "Was glaubst du, wer darin sitzt?"
+  },
+  {
+   "id": "r1",
+   "scene": "reveal",
+   "say": "Am Steuer: Rudi R. Sein Körper ist vollständig. Nicht zerstückelt. Nicht verfüttert.",
+   "show": "Am Steuer: Rudi R. Sein Körper ist vollständig. Nicht zerstückelt. Nicht verfüttert."
+  },
+  {
+   "id": "r2",
+   "scene": "reveal",
+   "say": "Die Geschichte, für die seine Familie im Gefängnis saß, kann so nie passiert sein.",
+   "show": "Die Geschichte, für die seine Familie im Gefängnis saß, kann so nie passiert sein."
+  },
+  {
+   "id": "r3",
+   "scene": "epilog",
+   "say": "Zweitausendelf werden alle freigesprochen. Wie er wirklich starb, ist bis heute ungeklärt.",
+   "show": "2011 werden alle freigesprochen. Wie er wirklich starb, ist bis heute ungeklärt."
+  },
+  {
+   "id": "r4",
+   "scene": "epilog",
+   "say": "Eine Haftentschädigung wurde ihnen verweigert oder gekürzt. Wegen ihrer falschen Geständnisse.",
+   "show": "Eine Haftentschädigung wurde ihnen verweigert oder gekürzt. Wegen ihrer falschen Geständnisse."
+  },
+  {
+   "id": "o1",
+   "scene": "outro",
+   "say": "Wie kann jemand einen Mord gestehen, den es nie gab? Schreib deine Meinung in die Kommentare.",
+   "show": "Wie kann jemand einen Mord gestehen, den es nie gab? Schreib deine Meinung in die Kommentare."
+  }
+ ]
+}
