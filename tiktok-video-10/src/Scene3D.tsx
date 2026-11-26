@@ -77,7 +77,7 @@ const Rig: React.FC = () => {
     // Kamera fährt mit der Höhe der Türme mit
     const h = Math.max(0.25, Math.max(at(0, ageAt(t)).value, at(1, ageAt(t)).value) / COIN / 4 * TH);
     const orbit = Math.sin(t * 0.12) * 0.22;
-    const dist = 2.6 + h * 1.2;
+    const dist = 3.4 + h * 1.0;
     pc.position.set(Math.sin(orbit) * dist, 0.55 + h * 0.75, Math.cos(orbit) * dist);
     pc.lookAt(0, 0.12 + h * 0.5, 0);
     pc.fov = 40;
