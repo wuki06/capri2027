@@ -1,0 +1,102 @@
+{
+ "voice": {
+  "model": "de-pavoque-low.onnx",
+  "lengthScale": 0.92,
+  "noiseScale": 0.55,
+  "noiseW": 0.7,
+  "pitch": 0.93,
+  "fx": "aecho=0.8:0.6:45|80:0.14|0.08"
+ },
+ "lines": [
+  {
+   "id": "h1",
+   "scene": "hook",
+   "say": "Rund vierzig Tatorte. Drei Länder. Und überall die DNA derselben Frau.",
+   "show": "Rund 40 Tatorte. Drei Länder. Und überall die DNA derselben Frau."
+  },
+  {
+   "id": "h2",
+   "scene": "hook",
+   "say": "Die Polizei jagte sie jahrelang. Was sie fand, glaubt kaum jemand.",
+   "show": "Die Polizei jagte sie jahrelang. Was sie fand, glaubt kaum jemand."
+  },
+  {
+   "id": "p1",
+   "scene": "map",
+   "say": "Es beginnt in den Neunzigern: Ermittler finden an einem Tatort weibliche DNA.",
+   "show": "Es beginnt in den Neunzigern: Ermittler finden an einem Tatort weibliche DNA."
+  },
+  {
+   "id": "p2",
+   "scene": "map",
+   "say": "Dann taucht sie wieder auf. Und wieder. Bei Einbrüchen, sogar bei Morden.",
+   "show": "Dann taucht sie wieder auf. Und wieder. Bei Einbrüchen, sogar bei Morden."
+  },
+  {
+   "id": "p3",
+   "scene": "map",
+   "say": "Deutschland, Österreich, Frankreich. Aber niemand hat sie je gesehen.",
+   "show": "Deutschland, Österreich, Frankreich. Aber niemand hat sie je gesehen."
+  },
+  {
+   "id": "p4",
+   "scene": "heilbronn",
+   "say": "Zweitausendsieben, Heilbronn: Eine junge Polizistin wird erschossen. Am Streifenwagen: ihre DNA.",
+   "show": "2007, Heilbronn: Eine junge Polizistin wird erschossen. Am Streifenwagen: ihre DNA."
+  },
+  {
+   "id": "p5",
+   "scene": "board",
+   "say": "Die Medien nennen sie: das Phantom von Heilbronn. Die Frau ohne Gesicht.",
+   "show": "Die Medien nennen sie: das Phantom von Heilbronn. Die Frau ohne Gesicht."
+  },
+  {
+   "id": "p6",
+   "scene": "board",
+   "say": "Dreihunderttausend Euro Belohnung. Tausende Hinweise. Keine Spur.",
+   "show": "300.000 Euro Belohnung. Tausende Hinweise. Keine Spur."
+  },
+  {
+   "id": "s1",
+   "scene": "board",
+   "say": "Wie kann eine Frau an so vielen Orten sein, ohne gesehen zu werden? Was glaubst du?",
+   "show": "Wie kann eine Frau an so vielen Orten sein, ohne gesehen zu werden? Was glaubst du?"
+  },
+  {
+   "id": "r1",
+   "scene": "twist",
+   "say": "Zweitausendneun die Wende: Ihre DNA taucht bei einem toten Mann auf. Unmöglich.",
+   "show": "2009 die Wende: Ihre DNA taucht bei einem toten Mann auf. Unmöglich."
+  },
+  {
+   "id": "r2",
+   "scene": "twist",
+   "say": "Die Wahrheit: Das Phantom gab es nie.",
+   "show": "Die Wahrheit: Das Phantom gab es nie."
+  },
+  {
+   "id": "r3",
+   "scene": "swab",
+   "say": "Die DNA klebte an den Wattestäbchen der Spurensicherung. Eine Arbeiterin hatte sie beim Verpacken berührt.",
+   "show": "Die DNA klebte an den Wattestäbchen der Spurensicherung. Eine Arbeiterin hatte sie beim Verpacken berührt."
+  },
+  {
+   "id": "r4",
+   "scene": "swab",
+   "say": "Jahrelang jagte die Polizei eine Frau, die nie etwas getan hat.",
+   "show": "Jahrelang jagte die Polizei eine Frau, die nie etwas getan hat."
+  },
+  {
+   "id": "e1",
+   "scene": "epilog",
+   "say": "Der Mord an der Polizistin wurde zweitausendelf der Terrorgruppe NSU zugeordnet.",
+   "show": "Der Mord an der Polizistin wurde 2011 der Terrorgruppe NSU zugeordnet."
+  },
+  {
+   "id": "o1",
+   "scene": "outro",
+   "say": "Hättest du das geahnt? Schreib es in die Kommentare!",
+   "show": "Hättest du das geahnt? Schreib es in die Kommentare!"
+  }
+ ]
+}
