@@ -1,0 +1,26 @@
+{
+  "voice": {"lengthScale": 0.96, "noiseScale": 0.6, "noiseW": 0.8},
+  "lines": [
+    {"id": "h1", "scene": "hook", "say": "Drei Türen. Hinter einer steht ein Auto. Hinter den anderen: Ziegen.", "show": "Drei Türen. Hinter einer steht ein Auto. Hinter den anderen: Ziegen."},
+    {"id": "h2", "scene": "hook", "say": "Dieses Rätsel hat sogar Mathe-Professoren blamiert. Fast jeder liegt falsch.", "show": "Dieses Rätsel hat sogar Mathe-Professoren blamiert. Fast jeder liegt falsch."},
+
+    {"id": "g1", "scene": "game", "say": "Du wählst eine Tür. Sagen wir: Tür eins.", "show": "Du wählst eine Tür. Sagen wir: Tür 1."},
+    {"id": "g2", "scene": "game", "say": "Der Moderator weiß, wo das Auto steht. Er öffnet eine andere Tür, mit einer Ziege.", "show": "Der Moderator weiß, wo das Auto steht. Er öffnet eine andere Tür – mit einer Ziege."},
+    {"id": "g3", "scene": "game", "say": "Jetzt die Frage: Bleibst du bei deiner Tür, oder wechselst du?", "show": "Jetzt die Frage: Bleibst du bei deiner Tür oder wechselst du?"},
+
+    {"id": "q1", "scene": "question", "say": "Die meisten sagen: Egal! Zwei Türen, also fünfzig zu fünfzig.", "show": "Die meisten sagen: Egal! Zwei Türen, also 50 zu 50."},
+    {"id": "q2", "scene": "question", "say": "Wir testen es. Tausend Spiele! Spieler Blau bleibt immer. Spieler Pink wechselt immer. Merk dir deinen Tipp!", "show": "Wir testen es. 1000 Spiele! Spieler Blau bleibt immer. Spieler Pink wechselt immer. Merk dir deinen Tipp!"},
+
+    {"id": "m1", "scene": "sim", "say": "Jeder Sieg ist eine Kugel. Am Anfang ist es knapp.", "show": "Jeder Sieg ist eine Kugel. Am Anfang ist es knapp."},
+    {"id": "m2", "scene": "sim", "say": "Jetzt decken wir die Röhren ab, und spielen alle tausend Runden durch.", "show": "Jetzt decken wir die Röhren ab und spielen alle 1000 Runden durch."},
+
+    {"id": "s1", "scene": "freeze", "say": "Fertig! Bevor wir aufdecken: Wer hat gewonnen? Blau oder Pink?", "show": "Fertig! Bevor wir aufdecken: Wer hat gewonnen? Blau oder Pink?"},
+
+    {"id": "r1", "scene": "reveal", "say": "Wechseln gewinnt! Fast doppelt so oft!", "show": "Wechseln gewinnt! Fast doppelt so oft!"},
+    {"id": "r2", "scene": "explain", "say": "Der Grund: Deine erste Wahl trifft nur in einem von drei Fällen das Auto. In den anderen zwei Fällen muss der Moderator die zweite Ziege zeigen, und das Auto steht hinter der letzten Tür.", "show": "Der Grund: Deine erste Wahl trifft nur in einem von drei Fällen das Auto. In den anderen zwei Fällen muss der Moderator die zweite Ziege zeigen – und das Auto steht hinter der letzten Tür."},
+
+    {"id": "t1", "scene": "twist", "say": "Als eine Kolumnistin das neunzehnhundertneunzig erklärte, bekam sie tausende Protestbriefe, sogar von Doktoren. Sie hatte trotzdem recht.", "show": "Als eine Kolumnistin das 1990 erklärte, bekam sie tausende Protestbriefe, sogar von Doktoren. Sie hatte trotzdem recht."},
+
+    {"id": "o1", "scene": "outro", "say": "Hättest du gewechselt? Schreib es in die Kommentare!", "show": "Hättest du gewechselt? Schreib es in die Kommentare!"}
+  ]
+}
