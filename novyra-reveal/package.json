@@ -1,0 +1,9 @@
+{
+  "name": "novyra-cinematic-reveal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "bash scripts/render.sh"
+  }
+}
