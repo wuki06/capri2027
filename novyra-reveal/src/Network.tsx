@@ -33,7 +33,7 @@ const project = (p: number[], rot: number, tilt: number, R: number) => {
   const st = Math.sin(tilt);
   const y = y0 * ct - z * st;
   z = y0 * st + z * ct;
-  const f = 1400 / (1400 + z * R);
+  const f = 1400 / Math.max(350, 1400 + z * R);
   return {x: W / 2 + x * R * f, y: 780 + y * R * f, z, f};
 };
 
@@ -85,7 +85,7 @@ export const Network: React.FC = () => {
     });
     // Knoten
     P.forEach((p, i) => {
-      const sz = (2.5 + 4 * (1 - (p.z + 1) / 2)) * p.f;
+      const sz = Math.max(0.5, (2.5 + 4 * (1 - (p.z + 1) / 2)) * p.f);
       const g = c.createRadialGradient(p.x, p.y, 0, p.x, p.y, sz * 4);
       g.addColorStop(0, 'rgba(255,255,255,0.95)');
       g.addColorStop(0.3, i % 5 === 0 ? 'rgba(170,130,255,0.6)' : 'rgba(90,170,255,0.6)');
@@ -94,7 +94,7 @@ export const Network: React.FC = () => {
       c.fillRect(p.x - sz * 4, p.y - sz * 4, sz * 8, sz * 8);
     });
     // Leuchtender Kern
-    const cg = c.createRadialGradient(W / 2, 780, 0, W / 2, 780, R * 0.9 + 60);
+    const cg = c.createRadialGradient(W / 2, 780, 0, W / 2, 780, Math.max(1, R * 0.9 + 60));
     cg.addColorStop(0, `rgba(140,190,255,${0.35 + collapse * 0.6})`);
     cg.addColorStop(1, 'rgba(40,60,160,0)');
     c.fillStyle = cg;
